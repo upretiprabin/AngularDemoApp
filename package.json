@@ -1,0 +1,16 @@
+{
+  "name": "idssampleview",
+  "version": "1.0.0",
+  "description": "A demo project",
+  "main": "index.js",
+  "scripts": {
+    "start":"http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prabin upreti",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="IDSDemo">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="app.js"></script>
+    <script src="app.config.js"></script>
+    <script src="controllers.js"></script>
+
+</head>
+
+<body ng-controller="MainCtrl as main">
+
+    <div ui-view></div>
+
+</body>

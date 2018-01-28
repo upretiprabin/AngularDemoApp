@@ -1,0 +1,55 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <h1>
+                    Configure Inputs for ADC Converter
+                </h1>
+                <small>You can configure settings for the converter device which will be reflected in the chart in dashboard.</small>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Configure Settings to change initial data sets.</h3>
+                </div>
+                <br><br>
+                <div class="card-body collapse in">
+                    <form>
+                        <fieldset class="form-group">
+                            <label>Change Voltage</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <input type="number" class="form-control" ng-model="voltage">
+                            </div>
+                            <small ng-show="voltage<=0" class="text-danger">Voltage must be greater than 0.</small>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label>Change Frequency</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                </div>
+                                <input type="number" class="form-control" ng-model="frequency">
+                            </div>
+                            <small ng-show="frequency<=0" class="text-danger">Frequency must be greater than 0.</small>
+                        </fieldset>
+
+                        <input ng-disabled="frequency<=0 || voltage<=0" type="button" class="btn-primary btn-default btn-rounded" value="Configure" ng-click="changeChart()">
+                        <input style="margin-left: 30%;" type="button" class="btn-primary btn-danger btn-rounded" value="Reset" ng-click="reset()">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

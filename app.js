@@ -1,0 +1,1 @@
+angular.module('IDSDemo', ['ui.bootstrap','ui.router','chart.js']);
